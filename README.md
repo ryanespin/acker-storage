@@ -2,7 +2,7 @@
 
 ## Features
 
-This template comes with the following features:
+This template comes with the following featurez:
 
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)
