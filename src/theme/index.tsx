@@ -1,7 +1,7 @@
+import { faCaretDown } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ActionIcon, Badge, Button, Card, createTheme, rem, Select } from '@mantine/core';
 import { colors } from './colors';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/pro-solid-svg-icons';
 
 export const theme = createTheme({
   black: '#212121',
@@ -11,8 +11,8 @@ export const theme = createTheme({
     ActionIcon: ActionIcon.extend({
       defaultProps: {
         size: 'lg',
-        variant: 'outline'
-      }
+        variant: 'outline',
+      },
     }),
     Badge: Badge.extend({
       defaultProps: {
@@ -20,27 +20,27 @@ export const theme = createTheme({
         c: 'black',
         lh: '1',
         radius: 'sm',
-        tt: 'capitalize'
-      }
+        tt: 'capitalize',
+      },
     }),
     Button: Button.extend({
       defaultProps: {
-        variant: 'outline'
+        variant: 'outline',
       },
     }),
     Card: Card.extend({
       defaultProps: {
         padding: rem(24),
         radius: rem(12),
-        withBorder: true
-      }
+        withBorder: true,
+      },
     }),
     Select: Select.extend({
       defaultProps: {
         checkIconPosition: 'right',
-        rightSection: <FontAwesomeIcon icon={faCaretDown} />
-      }
-    })
+        rightSection: <FontAwesomeIcon icon={faCaretDown} />,
+      },
+    }),
   },
   fontFamily: "'Nunito Sans Variable', sans-serif",
   fontSizes: {
@@ -51,11 +51,11 @@ export const theme = createTheme({
     '6xl': rem(60),
     '7xl': rem(72),
     '8xl': rem(96),
-    '9xl': rem(128)
+    '9xl': rem(128),
   },
   headings: {
-    fontWeight: '400'
+    fontWeight: '400',
   },
   primaryColor: 'acker-red',
-  primaryShade: 9
+  primaryShade: 9,
 });

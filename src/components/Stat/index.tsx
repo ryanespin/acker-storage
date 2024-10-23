@@ -1,4 +1,4 @@
-import { Box, BoxProps, Flex } from "@mantine/core";
+import { Box, BoxProps, Flex } from '@mantine/core';
 import classes from './Stat.module.css';
 
 interface StatProps extends BoxProps {
@@ -6,23 +6,23 @@ interface StatProps extends BoxProps {
 }
 
 export function Stat(props: StatProps) {
-  return <Box<'dl'> className={classes.stat} component="dl" {...props} />
+  return <Box<'dl'> className={classes.stat} component="dl" {...props} />;
 }
 
 function StatGroup(props: StatProps) {
-  return <Flex className={classes.group} role="group" {...props}/>
+  return <Flex className={classes.group} role="group" {...props} />;
 }
 
 function StatHelpText(props: StatProps) {
-  return <Box<'dd'> className={classes['help-text']} component="dd" {...props} />
+  return <Box<'dd'> className={classes['help-text']} component="dd" {...props} />;
 }
 
 function StatLabel(props: StatProps) {
-  return <Box<'dt'> className={classes.label} component="dt" {...props} />
+  return <Box<'dt'> className={classes.label} component="dt" {...props} />;
 }
 
 function StatNumber(props: StatProps) {
-  return <Box<'dd'> className={classes.number} component="dd" {...props} />
+  return <Box<'dd'> className={classes.number} component="dd" {...props} />;
 }
 
 Stat.Group = StatGroup;

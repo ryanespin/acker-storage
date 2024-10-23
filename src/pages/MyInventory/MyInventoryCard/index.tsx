@@ -1,11 +1,24 @@
-import { ActionIcon, Autocomplete, Badge, Box, Card, Collapse, Flex, rem, Select, Text, Title, Tooltip } from '@mantine/core';
-import classes from './MyInventoryCard.module.css';
+import { faSearch } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faDownload, faSliders } from '@fortawesome/sharp-light-svg-icons';
-import { faSearch } from '@fortawesome/pro-solid-svg-icons';
+import {
+  ActionIcon,
+  Autocomplete,
+  Badge,
+  Box,
+  Card,
+  Collapse,
+  Flex,
+  rem,
+  Select,
+  Text,
+  Title,
+  Tooltip,
+} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { MyInventoryListItem } from '../MyInventoryListItem';
 import { SampleInventoryData } from '@/data/data';
+import { MyInventoryListItem } from '../MyInventoryListItem';
+import classes from './MyInventoryCard.module.css';
 
 export function MyInventoryCard() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -21,7 +34,14 @@ export function MyInventoryCard() {
       </Flex>
       <Flex className={classes.header}>
         <Text>
-          <Text fw={700} span>{SampleInventoryData.length.toLocaleString()}</Text> items out of <Text fw={700} span>{SampleInventoryData.length.toLocaleString()}</Text> total
+          <Text fw={700} span>
+            {SampleInventoryData.length.toLocaleString()}
+          </Text>{' '}
+          items out of{' '}
+          <Text fw={700} span>
+            {SampleInventoryData.length.toLocaleString()}
+          </Text>{' '}
+          total
         </Text>
         <Flex gap={rem(4)}>
           <Select
@@ -47,18 +67,18 @@ export function MyInventoryCard() {
                 alignItems: 'baseline',
                 display: 'flex',
                 flexDirection: 'row',
-                gap: rem(4)
+                gap: rem(4),
               },
               input: {
                 color: 'var(--mantine-color-acker-red-9)',
-                textAlign: 'center'
+                textAlign: 'center',
               },
               section: {
-                color: 'var(--mantine-color-acker-red-9)'
+                color: 'var(--mantine-color-acker-red-9)',
               },
               wrapper: {
-                width: rem(130)
-              }
+                width: rem(130),
+              },
             }}
             rightSection={<FontAwesomeIcon icon={faChevronDown} size="sm" />}
           />
@@ -94,28 +114,12 @@ export function MyInventoryCard() {
             flex={1}
             radius="xl"
             placeholder="Bottle Size..."
-            data={[
-              'Bottle',
-              'Half-Bottle',
-              'Magnum'
-            ]}
+            data={['Bottle', 'Half-Bottle', 'Magnum']}
             searchable
             clearable
           />
-          <Select
-            flex={1}
-            radius="xl"
-            placeholder="Region..."
-            searchable
-            clearable
-          />
-          <Select
-            flex={1}
-            radius="xl"
-            placeholder="Tag..."
-            searchable
-            clearable
-          />
+          <Select flex={1} radius="xl" placeholder="Region..." searchable clearable />
+          <Select flex={1} radius="xl" placeholder="Tag..." searchable clearable />
         </Flex>
       </Collapse>
       {SampleInventoryData.map((i, k) => (

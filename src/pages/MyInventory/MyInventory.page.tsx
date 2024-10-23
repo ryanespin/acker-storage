@@ -1,9 +1,9 @@
 import { Container, Flex } from '@mantine/core';
 import { MyInventoryCard } from './MyInventoryCard';
-import { StatsCard } from './StatsCard';
-import classes from './MyInventory.module.css'
 import { RegionsCard } from './RegionsCard';
+import { StatsCard } from './StatsCard';
 import { VintageCard } from './VintageCard';
+import classes from './MyInventory.module.css';
 
 export function MyInventory() {
   return (

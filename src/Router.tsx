@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { MyInventory } from './pages/MyInventory/MyInventory.page';
 import { Layout } from './pages/Layout';
+import { MyInventory } from './pages/MyInventory/MyInventory.page';
 
 const router = createBrowserRouter([
   {
@@ -9,9 +9,9 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MyInventory />
-      }
-    ]
+        element: <MyInventory />,
+      },
+    ],
   },
 ]);
 

@@ -5,12 +5,12 @@ export interface InventoryItemProps {
   condition?: {
     short?: string;
     long?: string;
-  }
+  };
   designation?: string;
   estimate?: {
     low?: number;
     high?: number;
-  }
+  };
   imageSrc?: string;
   latestAddition?: Date | string | number;
   producer?: string;

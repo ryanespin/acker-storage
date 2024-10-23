@@ -1,7 +1,17 @@
-import { BackgroundImage, Badge, Box, Card, CardProps, Flex, rem, Text, Tooltip } from "@mantine/core";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import {
+  BackgroundImage,
+  Badge,
+  Box,
+  Card,
+  CardProps,
+  Flex,
+  rem,
+  Text,
+  Tooltip,
+} from '@mantine/core';
+import { InventoryItemProps } from '@/types';
 import classes from './MyInventoryListItem.module.css';
-import { InventoryItemProps } from "@/types";
 
 interface MyInventoryListItemProps extends CardProps, InventoryItemProps {}
 
@@ -30,22 +40,20 @@ export function MyInventoryListItem(props: MyInventoryListItemProps) {
       withBorder={false}
       {...otherProps}
     >
-      <BackgroundImage
-        bgsz="contain"
-        bgr="no-repeat"
-        src={imageSrc}
-        w={rem(80)}
-      />
+      <BackgroundImage bgsz="contain" bgr="no-repeat" src={imageSrc} w={rem(80)} />
       <Flex className={classes.wrapper}>
         <Flex className={classes.header}>
           <Text fw={700} size="sm">
             Box #{box}
           </Text>
           <Badge>
-            {quantity} {bottleSize}{quantity !== 1 && 's'}
+            {quantity} {bottleSize}
+            {quantity !== 1 && 's'}
           </Badge>
         </Flex>
-        <Text size="lg">{vintage} {producer} {wineName}</Text>
+        <Text size="lg">
+          {vintage} {producer} {wineName}
+        </Text>
         <Flex className={classes['trait-list']}>
           {region && <Box className={classes['trait-list-item']}>{region}</Box>}
           {designation && <Box className={classes['trait-list-item']}>{designation}</Box>}
@@ -59,5 +67,5 @@ export function MyInventoryListItem(props: MyInventoryListItemProps) {
         </Flex>
       </Flex>
     </Card>
-  )
+  );
 }
