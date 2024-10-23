@@ -3,13 +3,16 @@
   display: flex;
   flex-direction: column-reverse;
   gap: var(--mantine-spacing-lg);
+
   @media (min-width: $mantine-breakpoint-md) {
     flex-direction: row;
   }
+
   &-right {
     flex: 1;
     flex-wrap: wrap;
     gap: inherit;
+
     @media (min-width: $mantine-breakpoint-md) {
       flex-direction: column;
     }

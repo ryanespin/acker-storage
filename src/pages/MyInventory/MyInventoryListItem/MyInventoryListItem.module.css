@@ -2,6 +2,7 @@
   border-bottom: 1px solid var(--mantine-color-acker-gray-2);
   border-radius: 0;
   flex-direction: row;
+
   &:hover {
     background-color: var(--mantine-color-acker-red-0);
   }
@@ -23,6 +24,7 @@
   flex-wrap: wrap;
   font-size: var(--mantine-font-size-sm);
   gap: rem(8);
+
   .trait-list-item + .trait-list-item {
     padding-left: rem(8);
     border-left: 1px solid alpha(var(--mantine-color-text), 0.182);

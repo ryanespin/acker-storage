@@ -11,6 +11,7 @@ const regionDataGrouped = Object.groupBy(SampleInventoryData, ({ region }) => re
 const regionDataSorted = Object.keys(regionDataGrouped).sort((a,b) => (
   (regionDataGrouped[b] ? regionDataGrouped[b].length : 0) - (regionDataGrouped[a] ? regionDataGrouped[a].length : 0)
 )).reduce((acc, key) => (
+  // eslint-disable-next-line no-sequences
   (acc[key]=regionDataGrouped[key]), acc), {} as keyof typeof regionDataGrouped
 );
 
