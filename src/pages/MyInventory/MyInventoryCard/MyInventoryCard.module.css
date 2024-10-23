@@ -1,0 +1,15 @@
+.card {
+  max-width: var(--mantine-breakpoint-sm);
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  gap: var(--mantine-spacing-md);
+  justify-content: space-between;
+}
+
+.mantine-Select-input {
+  --input-color: #42b889 !important;
+  border: 5px solid red;
+}

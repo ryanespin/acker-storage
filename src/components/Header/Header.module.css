@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--mantine-color-black);
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-xl);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: rem(32);
+  width: auto;
+}

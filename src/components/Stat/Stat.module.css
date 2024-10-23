@@ -1,0 +1,29 @@
+.label {
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+}
+
+.number {
+  font-size: var(--mantine-font-size-2xl);
+  font-variant-numeric: proportional-nums;
+  font-weight: 600;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.help-text {
+  color: var(--mantine-color-dimmed);
+  font-size: var(--mantine-font-size-sm);
+  margin-bottom: var(--mantine-spacing-sm);
+}
+
+.group {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: var(--mantine-spacing-xs);
+  > .stat {
+    position: relative;
+    flex: 1 1 0%;
+  }
+}

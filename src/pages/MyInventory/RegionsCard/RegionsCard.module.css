@@ -1,0 +1,55 @@
+.legend-name {
+  font-size: var(--mantine-font-size-sm);
+}
+
+.legend-count {
+  font-size: var(--mantine-font-size-xs);
+}
+
+.legend-value {
+  flex: 1;
+  font-weight: 600;
+  text-align: right;
+}
+
+.legend-container {
+  gap: var(--mantine-spacing-xs);
+}
+
+.total-value {
+  flex: 1;
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 600;
+  text-align: right;
+}
+
+.chart {
+  transform: scale(-1,1);
+}
+
+.chart-container {
+  position: relative;
+}
+
+.chart-label-container {
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(20);
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.chart-label {
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 600;
+}
+
+.chart-sub-label {
+  color: var(--mantine-color-dimmed);
+  font-size: var(--mantine-font-size-xs);
+}
